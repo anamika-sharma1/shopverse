@@ -1,0 +1,45 @@
+.contact{
+    background-color: rgb(47, 82, 209);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70px;
+
+    .wrapper{
+        padding: 20px;
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .mail{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input{
+                border-radius: 5px 0px 0px 5px;
+                border: none;
+                height: 30px;
+            }
+
+            button{
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 0px 5px 5px 0px;
+                height: 30px;
+            }
+        }
+
+        .icons{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+
+    
+}

@@ -1,0 +1,121 @@
+.navbar{
+    height:60px;
+    position:relative;
+    background-color: rgb(17, 17, 36);
+    color: white;
+    margin-bottom: 5px;
+    
+    .wrapper{
+        height: 60px;
+        padding :1px 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .item{
+            display: flex;
+            align-items: center;
+            border: 1px solid white;
+            padding: 5px 10px;
+            width: fit-content;
+        }
+
+        .left{
+            display: flex;
+            gap:20px;
+            align-items: center;
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .right{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icons{
+            display: flex;
+            gap: 5px;
+            color: grey;
+        }
+
+        .cartIcon{
+            position: relative;
+            span{
+                background-color: rgb(0, 128, 255);
+                color:white;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -10px;
+                right:-10px;
+            }
+        }
+        
+    }
+}
+
+.left{
+    .item{
+        .flag{
+            width: 25x;
+            height: 25px;
+            object-fit: cover;
+        }
+    }
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-image{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+
+.logout-item{
+    position: relative;
+}
+
+.logout{
+    position: absolute;
+    top:40px;
+    z-index: 999;
+    right: -10px;
+    background-color: white;
+    color: rgb(17, 17, 36);;
+    box-shadow: 1px 2px 14px -7px black;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logout:hover{
+    background-color: #f1ebeb;
+    color: rgb(17, 17, 36);
+    transition: all 0.2s ease;
+}
+
+.special:hover{
+    background-color: white;
+    color: rgb(17, 17, 36);
+    border: 1px solid rgb(17, 17, 36);
+    transition: all 0.2s linear;
+}

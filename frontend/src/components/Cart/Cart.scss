@@ -1,0 +1,119 @@
+.cart{
+    position: absolute;
+    top:80px;
+    right: 20px;
+    width: 30%;
+    z-index:999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    -webkit-box-shadow:0px 0px 7px -5px black;
+    box-shadow:0px 0px 7px -5px black;
+        
+        .top{
+            width: 100%;
+            flex:1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            h1{
+                display: flex;
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        .center{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap:20px;
+
+            .item{
+                flex:1;
+                width: 100%;
+                display: flex;
+                gap:10px;
+
+                .left{
+                    flex:1;
+                    img{
+                        height: 100%;
+                        width: 100px;
+                        object-fit: cover;
+                        object-position: top;
+                    }                   
+                }
+
+                .center{
+                    flex:2;
+                    display: flex;
+                    flex-direction: column;gap:10px;
+                    h1{
+                        margin:0px;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                    .description{
+                        text-align: justify;
+                        color: gray;
+                        font-size: 13px;
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: rgb(36, 136, 212);
+                        font-weight: bold;
+                    }
+                }
+
+                .right{
+                    flex:0.5;
+                    display: flex;
+                    align-items:center;
+                    justify-content: center;
+                    
+                    .delete{
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .bottom{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+            justify-content: center;
+
+            .total{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 18px;
+                font-weight: bold;
+                color: teal
+            }
+            // button{
+            //     width: 50%;
+            //     cursor: pointer;
+            //     border: none;
+            //     color: white;
+            //     background-color: rgb(20, 135, 206);
+            //     height: 30px;
+            //     font-weight: bold;
+            // }
+            .reset{
+                color: red;
+                font-size: 13px;
+                cursor: pointer;
+            }
+        }
+
+    
+}

@@ -1,0 +1,49 @@
+.categories{
+    display: flex;
+    gap:3px;
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        height: 600px;
+        gap:3px;
+
+        .row{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            flex:1;
+            gap : 3px;
+            overflow: hidden;
+            position: relative;
+            align-items: center;
+            justify-content: center;;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .link{
+                position: absolute;
+                width: 80px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                color: teal;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .col-l{
+        flex:2;
+        gap : 3px;
+    }
+}
